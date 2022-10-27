@@ -13,11 +13,28 @@
 
 }
 
-.container{
-    margin-left: 400px;
-    flex-direction: column;
-    gap: 50px;
+.container1{
+    padding-top: 30px;
+    margin-bottom: 20px;
+    flex-direction: row;
     display: flex;
     text-align: center;
     justify-content: center;
+    gap: 40px;
+}
+
+
+.container2{
+    gap: 40px;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+p{
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+
 }
