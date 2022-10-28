@@ -1,5 +1,7 @@
 .operador{
-
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
     width: 800px;
     height: 300px;
     border: solid 3px black;
@@ -30,11 +32,4 @@
     display: flex;
     text-align: center;
     justify-content: center;
-}
-
-p{
-    font-size: 30px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: green;
-
 }
