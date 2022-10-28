@@ -1,5 +1,5 @@
 const DisplayText = document.getElementById('text_operador')
-const frase = ["Ola seja bem vindo!!"]
+const frase = ["Ola seja bem vindo! "]
 let i = 0
 let j = 0
 let isDelete = false
@@ -28,10 +28,10 @@ function loop () {
 
         }
         if ( j == frase[i].length){
-            isDelete = true  
+           //Apaga texto
         }
 
-    const  time = isDelete ? 50 : 100
+    const  time =  100
     setTimeout(loop, time)
 }
 loop()
