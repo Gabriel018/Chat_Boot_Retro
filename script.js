@@ -1,9 +1,26 @@
+
+const op_carrocel = document.querySelector('.op_carrocel')
+const imgs = document.getElementById("img")
+const img  = document.querySelectorAll("#img img")
+
 const DisplayText = document.getElementById('text_operador')
 const frase = ["Ola seja bem vindo! "]
 let i = 0
 let j = 0
 let isDelete = false
 let Frase_Completa = []
+let dmx = 0
+
+function operador_carrocel(){
+
+    dmx++
+    if(dmx > img.length -1){
+       dmx = 0
+    }
+    imgs.style.transform  = `translateX(${-dmx * 200}px)`
+ }
+ setInterval(operador_carrocel,100)
+
 function loop () {
    DisplayText.innerHTML = Frase_Completa.join('')
    if (i < frase.length){
@@ -29,6 +46,7 @@ function loop () {
         }
         if ( j == frase[i].length){
            //Apaga texto
+
         }
 
     const  time =  100

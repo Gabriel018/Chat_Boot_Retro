@@ -32,6 +32,15 @@
 
 }
 
+.container{
+  display: flex;
+  transition: transform 0.5 ease-in-out;
+  transform: translateX(0);
+}
+
+
+
+
 .container1{
     padding-top: 30px;
     margin-bottom: 20px;
@@ -49,4 +58,12 @@
     display: flex;
     text-align: center;
     justify-content: center;
+}
+
+.op_carrocel{
+  background-color: blueviolet;
+  width: 200px;
+  height: 200px;
+  border: 4px solid black;
+  overflow: hidden;
 }
