@@ -66,6 +66,7 @@
 }
 
 .txt_cliente{
+  resize: none;
   width: 800px;
   height: 300px;
   font-size: 30px;

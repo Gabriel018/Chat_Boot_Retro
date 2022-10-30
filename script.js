@@ -1,4 +1,4 @@
-
+const cliente = document.getElementById('txt_cliente')
 const op_carrocel = document.querySelector('.op_carrocel')
 const imgs = document.getElementById("img")
 const img  = document.querySelectorAll("#img img")
@@ -11,6 +11,13 @@ let isDelete = false
 let Frase_Completa = []
 let dmx = 0
 
+cliente.addEventListener('keyup',function(e){
+var valor = cliente.value
+console.log(valor)
+})
+
+
+console.log(document.getElementById('txt_cliente').value)
 function operador_carrocel(){
     dmx++
     if(dmx > img.length +1 ){
