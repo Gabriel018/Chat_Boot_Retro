@@ -4,7 +4,7 @@ const imgs = document.getElementById("img")
 const img  = document.querySelectorAll("#img img")
 
 const DisplayText = document.getElementById('text_operador')
-const frase = ["Ola seja bem vindo! "]
+const frase = ["Ola seja bem vindo!, vou acompanha-lo durante esta cessao "]
 let i = 0
 let j = 0
 let isDelete = false
@@ -12,14 +12,16 @@ let Frase_Completa = []
 let dmx = 0
 
 function operador_carrocel(){
-
     dmx++
-    if(dmx > img.length -1){
-       dmx = 0
-    }
+    if(dmx > img.length +1 ){
+    dmx = 0
+     }
+        
     imgs.style.transform  = `translateX(${-dmx * 200}px)`
- }
- setInterval(operador_carrocel,100)
+}
+   setInterval(operador_carrocel,40)
+
+ console.log(dmx)
 
 function loop () {
    DisplayText.innerHTML = Frase_Completa.join('')
