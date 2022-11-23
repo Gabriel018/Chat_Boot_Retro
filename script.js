@@ -1,9 +1,9 @@
-const cliente = document.querySelector('txt_cliente')
+const cliente = document.getElementById('txt_cliente')
 const op_carrocel = document.querySelector('.op_carrocel')
 const imgs = document.getElementById("img")
 const img  = document.querySelectorAll("#img img")
 
-const DisplayText = document.querySelector('text_operador')
+const DisplayText = document.getElementById('text_operador')
 
 let dmx = 0
 
@@ -32,7 +32,7 @@ cliente.addEventListener('keyup',() => renderUserMsg())
    const Rendermsgele=(txt) => {
     const MensengerEle = document.createElement("div")
     const txtNode = document.createTextNode(txt)
-    MensengerEle.classList.add("use-msg")
+    MensengerEle.classList.add("user-msg")
     MensengerEle.append(txtNode)
     DisplayText.append(MensengerEle)
    }
