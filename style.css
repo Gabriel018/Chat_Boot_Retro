@@ -77,3 +77,7 @@
   background-image: url('img/chat_retro.png')
 
 }
+
+.user-msg{
+  color:blue;
+}
